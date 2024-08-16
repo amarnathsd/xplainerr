@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import companyLogo from "../Assets/company-logo.webp";
 import laptop from "../Assets/laptop-img.svg";
 
@@ -6,6 +7,9 @@ const Header = () => {
   const [showCoursesDropdown, setShowCoursesDropdown] = useState(false);
   const [showCohortDropdown, setShowCohortDropdown] = useState(false);
   const [showQuizDropdown, setShowQuizDropdown] = useState(false);
+
+  const navigate = useNavigate();
+
 
   return (
     <div>
@@ -55,9 +59,9 @@ const Header = () => {
                 </button>
                 {showCoursesDropdown && (
                   <div className="dropdown-menu">
-                    <a href="/">API Product Manager </a>
-                    <a href="/ux-designing">A to Z Pricing and Monitization</a>
-                    <a href="/other-api">UX Writing</a>
+                    <a onClick={() => navigate('/LandingPage')}>API Product Manager </a>
+                    <a onClick={() => navigate('/Atozpricing')}>A to Z Pricing and Monitization</a>
+                    <a onClick={() => navigate('/uxdesigning')}>UX Writing</a>
                   </div>
                 )}
               </div>
@@ -88,7 +92,7 @@ const Header = () => {
                         <img src={laptop} alt="laptop img" loading="lazy"  width="20" />
                       </div>
                       <div>
-                        <a href="/tech-for-product-manager">
+                        <a href="/">
                           Tech for Product Manager{" "}
                           <div>
                             <span>save ₹7000</span>
@@ -123,16 +127,16 @@ const Header = () => {
                 </button>
                 {showQuizDropdown && (
                   <div className="dropdown-menu">
-                    <a className="" href="/product-management">
+                    <a className="" href="/">
                       Product Management
                     </a>
-                    <a href="/growth">Growth & GTM</a>
-                    <a href="/software-engineering">Software Engineering</a>
+                    <a href="/">Growth & GTM</a>
+                    <a href="/">Software Engineering</a>
                   </div>
                 )}
               </div>
 
-              <button className="py-3 " href="/pm-interview">
+              <button className="py-3 " href="/">
                 PM Interview Prep
                 <span className="new-badge">New</span>
               </button>
