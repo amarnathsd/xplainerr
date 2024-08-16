@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  background-color: white; /* Optional: set a background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topHeaderstripe {
+  background: linear-gradient(90.04deg, #5d5be2 2.37%, #dd58c3 88.3%, #ffc530);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topHeaderstripe p {
+  font-size: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .login-btn {
+  background-color: rgb(28 100 242); /* Example background color */
+  color: white;
+  border-radius: 4px; /* Example border-radius */
+}
+
+.header .login-btn:hover {
+  background-color: rgb(30 66 159); /* Example hover background color */
+}
+
+.header .login-btn span {
+  font-size: 12px;
+}
+
+.header .signin-btn {
+  color: rgb(28 100 242);
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5rem;
+  z-index: 5; /* Ensure dropdown is above other elements */
+  width: 310%;
+}
+
+.header .dropdown-menu a {
+  font-size: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header .dropdown-menu a:hover {
+  color: rgb(28 100 242);
+  background-color: rgba(28, 100, 242, 0.1);
+}
+
+.button-container button {
+  font-size: 12px;
+}
+
+.header .dropdown-menu span {
+  color: rgb(28 100 242);
+  font-weight: bold;
+  font-size: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: rgba(28, 100, 242, 0.2);
+  padding: 3px;
+}
+
+.header .new-badge {
+  font-size: 10px;
   color: white;
+  font-weight: 600;
+  background-color: rgb(255 140 0);
+  padding: 0 5px 2px 5px;
+  border-radius: 2px;
+  margin-left: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+/* ******************************************************* LandingPage ************************************* */
+
+.general-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  padding: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial{
+  padding: 50px;
+}
+
+.general-info p{
+  font-size: 15px;
+}
+
+.free-class{
+  font-size: 4px;
+}
+
+
+.buynow-btn{
+  background-color: rgb(28 100 241);
+  color: white;
+  padding: 10px 35px 10px 35px;
+  border-radius: 5px;
+  font-size: 15px;
+
 }
