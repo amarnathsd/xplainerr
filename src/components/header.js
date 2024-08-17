@@ -42,7 +42,7 @@ const Header = () => {
                 onMouseEnter={() => setShowCoursesDropdown(true)}
                 onMouseLeave={() => setShowCoursesDropdown(false)}
               >
-                <button className="flex items-center py-3">
+                <button className="nav-tag flex items-center py-3">
                   Courses
                   <svg
                     stroke="currentColor"
@@ -71,7 +71,7 @@ const Header = () => {
                 onMouseEnter={() => setShowCohortDropdown(true)}
                 onMouseLeave={() => setShowCohortDropdown(false)}
               >
-                <button className="flex items-center gap-x-1 py-3 outline-none">
+                <button className="nav-tag flex items-center gap-x-1 py-3 outline-none">
                   Cohort
                   <svg
                     stroke="currentColor"
@@ -109,7 +109,7 @@ const Header = () => {
                 onMouseEnter={() => setShowQuizDropdown(true)}
                 onMouseLeave={() => setShowQuizDropdown(false)}
               >
-                <button className="flex items-center gap-x-1 py-3 outline-none">
+                <button className="nav-tag flex items-center gap-x-1 py-3 outline-none">
                   Quiz
                   <svg
                     stroke="currentColor"
@@ -136,11 +136,11 @@ const Header = () => {
                 )}
               </div>
 
-              <button className="py-3 " href="/">
+              <button className="nav-tag py-3 " href="/">
                 PM Interview Prep
                 <span className="new-badge">New</span>
               </button>
-              <button className="py-3 hover:text-primary_bold" href="/blog">
+              <button className="nav-tag py-3 hover:text-primary_bold" href="/blog">
                 Blog
               </button>
             </div>

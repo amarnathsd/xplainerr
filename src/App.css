@@ -80,6 +80,10 @@
   margin-left: 3px;
 }
 
+.header .nav-tag:hover{
+  color: rgb(28 100 242);
+}
+
 /* ******************************************************* LandingPage ************************************* */
 
 .general-info {
@@ -88,6 +92,7 @@
   align-items: center;
   max-width: 90%;
   padding: 50px;
+  height: 75%;
 }
 
 .testimonial{
